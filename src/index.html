@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artify</title>
+
+    <!-- icon Link -->
+    <link rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- ----------------popup------------ -->
+    <div class="popup">
+      <div class="popup-box">
+        <header>
+          <div class="name">
+            <i class="uil uil-camera"></i>
+            <span></span>
+          </div>
+
+          <div class="buttons">
+            <i class="uil uil-import"></i>
+            <i class="uil uil-times"></i>
+          </div>
+
+        </header>
+        <div class="preview-img">
+          <div class="img"><img src alt="preview-img"></div>
+          <div class="description-box">
+            <h1>Description :</h1>
+            <h3 class="description"> </h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- -------------header-------- -->
+    <header class="home">
+      <nav>
+        <button onclick="open_menu()" class="menu-btn open"><i
+            class="uil uil-bars"></i></button>
+        <img src="img/logo4.png" alt="logo" class="logo">
+
+        <ul class="navbar" id="menu">
+          <button onclick="close_menu()" class="menu-btn close"><i
+              class="uil uil-x"></i></button>
+          <li id="modernArt">Modern Art</li>
+          <li id="classics">Classics</li>
+          <li id="sculptures">Sculptures</li>
+          <li id="cubism">Cubism</li>
+          <li id="abstractArt">Abstract Art</li>
+          <li id="favourites">Favourites</li>
+
+        </ul>
+      </nav>
+      <section class="slider">
+        <!-- <img src="img/logo3.png" alt=""> -->
+        <img src="img/slider4.jpg" alt="slider">
+        <div class="content">
+          <h1>Image Gallery </h1>
+          <p>"<span>Welcome</span> to this <span>wonderful</span> world of <span>images</span>"</p>
+          <div class="search-box">
+            <i class="uil uil-search"></i>
+            <input type="text" placeholder="Search images" id="searchInput" />
+          </div>
+        </div>
+
+      </section>
+      <div class="heading"><h1>Explore the best of <span>Artify</span></h1></div>
+
+    </header>
+
+    <section class="main-container">
+
+      <ul id="main">
+
+      </ul>
+      <button class="load-more">Load More</button>
+    </section>
+
+    <script type="module" src="js/index.js"></script>
+    <script>
+      function open_menu() {
+        document.getElementById('menu').style.left = '0%';
+      }
+      function close_menu() {
+        document.getElementById('menu').style.left = '-100%';
+      }
+    </script>
+  </body>
+</html>
